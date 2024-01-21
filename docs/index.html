@@ -1,0 +1,85 @@
+<!--
+
+   Copyright 2023 Avery Yang
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Quonnect4</title>
+</head>
+
+<body>
+	<div class="messageBoard" id="messageBoard">
+		<div id="title">
+			Welcome to QUNNECT4
+		</div>
+		<div class="spacer">
+			<div id="spacer"></div>
+		</div>
+		<div id="introduction">
+			<p>
+				Qunnect4 is a quantum adaptation of the classic game Connect 4, designed to 
+				illustrate the counterintuitive aspects of quantum phenomena such as 
+				superposition, collapse, and entanglement.
+			</p>
+			<p>
+				In this game, a red-blue yin yang symbol 
+				<img src="images/yinyang_color.png" class="yinyang"> represents a superposed 
+				token, simulating a bichromatic photon in a superposition of two energy 
+				states - or colors. When a superposed token 
+				<img src="images/yinyang_color.png" class="yinyang"> is measured, it collapses
+				to <img src="images/dot_red.png" class="dot"> or 
+				<img src="images/dot_blue.png" class="dot">.
+			</p>
+			<p>
+				Tokens are grouped in pairs. A pair of tokens, named with same greek letter, 
+				are entangled. In other words, if one token is measured and collapses to 
+				<img src="images/dot_red.png" class="dot">, the other token will collapse
+				to <img src="images/dot_blue.png" class="dot"> simultaneously, and vice versa. 
+			</p>
+			<p>
+				A player places a pair of entangled tokens each turn. This is different to
+				Connect 4, in which only one token is placed.
+			</p>
+			<p>
+				To prevent a cycling condition, where one player always collapses the tokens
+				placed by the other, a player is not allowed to collapse an unmeasurable token,
+				represented by a gray out yin yang symbol 
+				<img src="images/yinyang_gray.png" class="yinyang">. An unmeasurable token
+				<img src="images/yinyang_gray.png" class="yinyang"> becomes measureable 
+				<img src="images/yinyang_color.png" class="yinyang"> after its row or column is 
+				fully occupied. This rule ensures a fair and balanced gameplay experience for 
+				both players.
+			</p>
+			<p>
+				Please <a href="mailto:info@qunnect4.app?subject=Qunnect4 Feedback"">let me know</a> 
+				if you have any questions or comments.
+			</p>
+			<p>
+				<a href="game.html">Enjoy the game</a> and have fun!
+			</p>
+		</div>
+	</div>
+	<footer>
+		&copy; Avery Yang
+	</footer>
+</body>
+</html>
